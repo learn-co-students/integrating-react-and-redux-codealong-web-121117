@@ -5,7 +5,7 @@ function createStore(reducer) {
     state = reducer(state, action);
     console.log(`the state is ${state.count}`);
     console.log(`the action is ${action.type}`);
-    render();
+    // render();
   };
 
   function getState(){
@@ -18,17 +18,17 @@ function createStore(reducer) {
   };
 };
 
-function changeCount(state = {
-  count: 0,
-}, action) {
-  switch (action.type) {
-    case 'INCREASE_COUNT':
-      return { count: state.count + 1 };
-    default:
-      return state;
-  };
-};
-
+// function changeCount(state = {
+//   count: 0,
+// }, action) {
+//   switch (action.type) {
+//     case 'INCREASE_COUNT':
+//       return { count: state.count + 1 };
+//     default:
+//       return state;
+//   };
+// };
+//
 
 function render(){
   let container = document.getElementById('container');
