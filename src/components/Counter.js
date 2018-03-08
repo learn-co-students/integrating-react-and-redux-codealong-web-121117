@@ -7,7 +7,6 @@ export default (props) => {
     }
 
     return (
-      console.log(props),
       <div>
         <button onClick={handleOnClick}>
           Click Me
